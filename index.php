@@ -7,15 +7,22 @@ $action = $_GET['action'] ?? 'listar';
 $controller = new Controller();
 
 switch ($action) {
-    case 'nuevo':
+    case 'mostrarFormulario':
         $controller->mostrarFormulario();
         break;
-    case 'guardar':
-        $controller->guardar();
+    case 'guardarVida':
+        $controller->guardarVida();
+        break;
+    case 'guardarMineral':
+        $controller->guardarMineral();
+        break;
+    case 'guardarArtefacto':
+        $controller->guardarArtefacto();
         break;
     case 'eliminar':
         $controller->eliminar();
         break;
+    case 'listar':
     default:
         $controller->listar();
         break;
