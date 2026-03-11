@@ -30,3 +30,4 @@ class EntidadEstelar {
         return "La entidad emite una señal desconocida.";
     }
 }
+?>
